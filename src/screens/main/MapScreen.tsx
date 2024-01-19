@@ -144,10 +144,16 @@ const MapScreen = ({navigation}) => {
               </Box>
             </Box>
             <Box marginTop={'md'} rowGap={'lg'}>
-              
               <Text variant={'bold16'}>History</Text>
               <Box marginBottom={'sm'}>
-                <Box height={SrfValue(40)}bottom={-40} left={25}  width={SrfValue(2)} position={'absolute'} backgroundColor={'lightGray'} />
+                <Box
+                  height={SrfValue(40)}
+                  bottom={-40}
+                  left={25}
+                  width={SrfValue(2)}
+                  position={'absolute'}
+                  backgroundColor={'lightGray'}
+                />
                 <Box
                   alignItems={'center'}
                   columnGap={'md'}
@@ -159,7 +165,6 @@ const MapScreen = ({navigation}) => {
                     backgroundColor={'primaryBg'}
                     justifyContent={'center'}
                     alignItems={'center'}>
-                      
                     <Image
                       style={{
                         height: SrfValue(24),
@@ -190,7 +195,14 @@ const MapScreen = ({navigation}) => {
                 </Box>
               </Box>
               <Box marginBottom={'sm'}>
-              <Box height={SrfValue(40)}bottom={-40} left={25}  width={SrfValue(2)} position={'absolute'} backgroundColor={'lightGray'} />
+                <Box
+                  height={SrfValue(40)}
+                  bottom={-40}
+                  left={25}
+                  width={SrfValue(2)}
+                  position={'absolute'}
+                  backgroundColor={'lightGray'}
+                />
 
                 <Box
                   alignItems={'center'}

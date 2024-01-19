@@ -84,7 +84,7 @@ export const MainTab = () => {
           tabBarLabel: 'Settings',
           tabBarIcon: ({color, size, focused}) => (
             <Image
-              source={imagespackages.Cart}
+              source={imagespackages.Heart}
               style={{
                 tintColor: focused ? '#555' : palette.lightGray,
                 height: SrfValue(24),
