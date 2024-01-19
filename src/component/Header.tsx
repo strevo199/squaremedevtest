@@ -13,17 +13,18 @@ const Header = ({headertext}) => {
   return (
     <Box
       marginVertical={'lg'}
+      marginTop={'md'}
       flexDirection={'row'}
       columnGap={'md'}
       justifyContent={'space-between'}>
       <TouchableOpacity onPress={() => navigation.goBack()}>
         <Image
-          style={{width: SrfValue(25), height: SrfValue(25)}}
-          source={imagespackages.arrowback}
+          style={{width: SrfValue(15), height: SrfValue(20)}}
+          source={imagespackages.Path}
         />
       </TouchableOpacity>
-      <Box flex={1}>
-        <Text color={'primaryColor'} variant={'bold18'}>
+      <Box alignItems={'center'} flex={1}>
+        <Text color={'mainText'} variant={'bold18'}>
           {headertext}
         </Text>
       </Box>

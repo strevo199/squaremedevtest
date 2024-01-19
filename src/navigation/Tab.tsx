@@ -10,27 +10,22 @@ import {Image} from 'react-native';
 import {imagespackages} from '../assets';
 import SrfValue from '../utils/SrfValue';
 import {palette} from '../Theme/palette';
+import ScreenOne from '../screens/auth/ScreenOne';
 
 const Tab = createBottomTabNavigator();
 
 export const MainTab = () => {
   return (
     <Tab.Navigator
-      initialRouteName="MainScreen"
+      initialRouteName="HomeScreen"
       screenOptions={{
         tabBarShowLabel: false,
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: '#0c0c26',
-          height: SrfValue(60),
+          backgroundColor: '#F1F6FB',
+          height: SrfValue(70),
         },
-      }}
-      //   tabBarOptions={{
-      //     activeTintColor: 'blue',
-      //     inactiveTintColor: 'gray',
-      //     style: {backgroundColor: palette.primaryColor},
-      //   }}
-    >
+      }}>
       <Tab.Screen
         name="Home"
         component={HomeScreen}
@@ -38,9 +33,9 @@ export const MainTab = () => {
           tabBarLabel: 'HomeScreen',
           tabBarIcon: ({color, size, focused}) => (
             <Image
-              source={imagespackages.home}
+              source={imagespackages.Home}
               style={{
-                tintColor: focused ? palette.white : '#e0e0e0',
+                tintColor: focused ? '#555' : palette.lightGray,
                 height: SrfValue(24),
                 width: SrfValue(24),
               }}
@@ -55,10 +50,26 @@ export const MainTab = () => {
           tabBarLabel: 'Settings',
           tabBarIcon: ({color, size, focused}) => (
             <Image
-              source={imagespackages.category}
+              source={imagespackages.Markey}
               style={{
-                tintColor: focused ? palette.white : '#e0e0e0',
-
+                tintColor: focused ? '#555' : palette.lightGray,
+                height: SrfValue(24),
+                width: SrfValue(24),
+              }}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="ScreenOne"
+        component={ScreenOne}
+        options={{
+          tabBarLabel: 'Settings',
+          tabBarIcon: ({color, size, focused}) => (
+            <Image
+              source={imagespackages.Cart}
+              style={{
+                tintColor: focused ? '#555' : palette.lightGray,
                 height: SrfValue(24),
                 width: SrfValue(24),
               }}
@@ -73,9 +84,9 @@ export const MainTab = () => {
           tabBarLabel: 'Settings',
           tabBarIcon: ({color, size, focused}) => (
             <Image
-              source={imagespackages.profile}
+              source={imagespackages.Cart}
               style={{
-                tintColor: focused ? palette.white : '#e0e0e0',
+                tintColor: focused ? '#555' : palette.lightGray,
                 height: SrfValue(24),
                 width: SrfValue(24),
               }}
