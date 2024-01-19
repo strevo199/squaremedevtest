@@ -2,7 +2,7 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import IntroScreen from '../screens/intro/IntroScreen';
 import {NavigationContainer} from '@react-navigation/native';
-import ScreenOne from '../screens/auth/ScreenOne';
+import ScreenOne from '../screens/main/ScreenOne';
 import CreatePin from '../screens/success/CreatPin';
 import {MainTab} from './Tab';
 import MapScreen from '../screens/success/MapScreen';

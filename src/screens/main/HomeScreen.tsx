@@ -9,7 +9,7 @@ import {palette} from '../../Theme/palette';
 import {imagespackages} from '../../assets';
 import {FlatList} from 'react-native';
 import Gif from 'react-native-gif';
-import ScreenOne from '../auth/ScreenOne';
+import ScreenOne from './ScreenOne';
 
 const HomeScreen = ({navigation}) => {
   const [show, setShow] = useState(true);

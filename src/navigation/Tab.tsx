@@ -10,7 +10,7 @@ import {Image} from 'react-native';
 import {imagespackages} from '../assets';
 import SrfValue from '../utils/SrfValue';
 import {palette} from '../Theme/palette';
-import ScreenOne from '../screens/auth/ScreenOne';
+import ScreenOne from '../screens/main/ScreenOne';
 
 const Tab = createBottomTabNavigator();
 
